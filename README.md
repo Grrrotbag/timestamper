@@ -1,6 +1,8 @@
 
 # Timestamper
 
+![preview image](preview.png)
+
 The simplest microservice imaginable. Timestamper surfaces an API which:
 
 - returns a json object with the current unix time and utc time
