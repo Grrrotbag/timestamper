@@ -1,0 +1,77 @@
+/****** Main Styling ******/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #fafafa;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+::selection {
+  background-color: aquamarine;
+}
+
+#header {
+  background: linear-gradient(90deg, #fbab7e 0%, #f7ce68 100%);
+  padding: 2em;
+  color: #fc7a57;
+  /* box-shadow: 0px 5px black; */
+}
+
+.body-container {
+  padding: 0;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 1em 0 1em 0;
+  text-shadow: 5px 5px black;
+}
+
+h2 {
+  font-weight: 800;
+  margin: 0.75em 0 1.75em 0;
+  color: white;
+  text-shadow: 2px 2px #fc7a57;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 0.5em;
+}
+
+hr {
+  margin: 25px;
+}
+
+.footer {
+  margin-top: 5em;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  padding: 2px;
+  color: black;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #fc7a57;
+}
