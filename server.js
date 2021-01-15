@@ -28,17 +28,23 @@ app.get("/api/timestamp", (req, res) => {
 });
 
 app.get("/api/timestamp/:date_string?", (req, res) => {
-  // Throw away start of url and keep date
-  const dateString = req.url.slice(15);
+  const dateString = req.params.date_string;
 
   // Convert to Date object (if not parsed, returns "invalid date")
   // unix timestamp urls may become integers! deal with that
   const date = !isNaN(dateString) ? new Date(parseInt(dateString)) : new Date(dateString);
+  console.log(date);
 
-  res.json({
-    unix: date.valueOf(),
-    utc: date.toUTCString(),
-  });
+  if (date.toString() === "Invalid Date") {
+    res.json({
+      error: "Invalid Date",
+    });
+  } else {
+    res.json({
+      unix: date.valueOf(),
+      utc: date.toUTCString(),
+    });
+  }
 });
 
 // listen for requests :)
